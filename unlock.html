@@ -6,11 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Unlock QQ Music</title>
+  <style type="text/css">
+body {padding: 0; margin: 0; font-size: 75%; line-height: 140%; font-family:Arial, Helvetica, sans-serif;}
+body,html{height: 100%; }
+a{color: #008b8b;}
+a:hover{color: #008b8b;}
+#outer {height: 100%; overflow: hidden; position: relative;width: 100%;background-image: url('https://cn.bing.com/th?id=OHR.HairyHighlanders_ZH-CN5546635143_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'); }
+#outer[id] {display: table; position: static;}
+#middle {position: absolute; top: 50%;text-align:center;} 
+#middle[id] {display: table-cell; vertical-align: middle; position: static;}
+#inner {position: relative; top: -50%;width: 600px;margin: 0 auto;text-align:left;}
+div.greenBorder {border: 0px solid black; }
+p{margin: 1em;}
+  </style>
+  
 </head>
-
 <body>
-  <p>音乐解密</p>
-  <input type="file" name="" id="openFile" accept=".QMCFLAC,.QMC0,.QMC3">
+	<div id="outer">
+		<div id="middle">
+		<div id="inner" class="greenBorder">
+		<table>
+			<tr>
+				<td><p><h1>音乐解密</h1><input type="file" name="" id="openFile" accept=".QMCFLAC,.QMC0,.QMC3"></p>
+					
+				</td>
+			</tr>
+		</table>
+		</div>
+		</div>
+	</div>
+
   <script>
     let openFile = document.querySelector('#openFile')
     openFile.addEventListener('change', e => {
