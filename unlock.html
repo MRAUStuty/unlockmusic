@@ -8,7 +8,16 @@
   <title>Unlock QQ Music</title>
   <style type="text/css">
 body {padding: 0; margin: 0; font-size: 75%; line-height: 140%; font-family:Arial, Helvetica, sans-serif;}
-body,html{height: 100%; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.footer {
+  height: 50px;
+}
+
 a{color: #008b8b;}
 a:hover{color: #008b8b;}
 #outer {height: 100%; overflow: hidden; position: relative;width: 100%;background-image: url('https://cn.bing.com/th?id=OHR.HairyHighlanders_ZH-CN5546635143_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'); }
@@ -18,6 +27,7 @@ a:hover{color: #008b8b;}
 #inner {position: relative; top: -50%;width: 600px;margin: 0 auto;text-align:left;}
 div.greenBorder {border: 0px solid black; }
 p{margin: 1em;}
+
   </style>
   
 </head>
@@ -27,15 +37,18 @@ p{margin: 1em;}
 		<div id="inner" class="greenBorder">
 		<table>
 			<tr>
-				<td><p><h1>音乐解密</h1><input type="file" name="" id="openFile" accept=".QMCFLAC,.QMC0,.QMC3"></p>
+				<td><p><h1>音乐解密（qmcflac/qmc0/qmc3 转 flac/mp3）</h1><input type="file" name="" id="openFile" accept=".QMCFLAC,.QMC0,.QMC3"></p>
 					<p><h3>备用站点:<a href="https://unlockmusic.herokuapp.com/">Heroku</a></h3></p>
 				</td>
 			</tr>
 		</table>
 		</div>
+	<footer class="footer"><span>&#169; 2019 OK-GOR</span></footer>
 		</div>
 	</div>
+	
 
+	
   <script>
     let openFile = document.querySelector('#openFile')
     openFile.addEventListener('change', e => {
